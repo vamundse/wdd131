@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+}
+
+#course-title {
+    display: block;
+}
+
+main {
+    width: 900px;
+    margin: 0 auto 0 auto;
+}
