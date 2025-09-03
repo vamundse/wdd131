@@ -1,17 +1,169 @@
+:root {
+    --background1: #DBD5C3;
+    --background2: #E2D8BA;
+    --background3: #E9E0C6;
+    --background4: #F1E9D6;
+    --font-color: #333333;
+    --font-family: "Noto Sans", sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
+    font-family: var(--font-family);
+    color: var(--font-color)
+}
+
+p {
+    padding: 0 0 20px 0;
+}
+
+h1 {
+    padding: 0 0 20px 0;
+}
+
+h2 {
+    font-family: "Archivo Black", sans-serif;
 }
 
 nav {
     display: flex;
+    justify-content: space-around;
+    padding: 15px 0;
+    background-color: var(--background4);
+}
+
+nav a {
+    color: var(--font-color);
+    text-decoration: none;
+    font-weight: 800;
+    padding: 5px;
+}
+
+nav a:hover {
+    color: darkcyan;
+    text-decoration: underline solid #333 1px;
 }
 
 #course-title {
     display: block;
 }
 
+header {
+    text-align: center;
+    font-weight: 400;
+}
+
+#course-title {
+    font-size: 2rem;
+    padding: 20px;
+    background-color: var(--background1);
+}
+
 main {
-    width: 900px;
+    max-width: 1200px;
+    margin: 40px auto 40px auto;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 0 30px;
+}
+
+.card {
+    border: var(--background1) 2px solid;
+    border-radius: 10px;
+}
+
+.card h2 {
+    background-color: var(--background1);
+    font-size: 1.3rem;
+    padding: 20px;
+}
+
+.card h3 {
+    text-align: center;
+}
+
+.underline {
+    border-bottom: 1px solid #333;
+    max-width: 600px;
     margin: 0 auto 0 auto;
+}
+
+.card ul {
+    padding: 20px 30px;
+}
+
+.card img {
+    width: 140px;
+    height: auto;
+}
+
+.about {
+    grid-column: 1 / 4;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.mehead {
+    grid-column: 1 / 5;
+    grid-row: 1 / 2;
+}
+
+.metext {
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+    padding: 20px;
+}
+
+.mephoto {
+    grid-column: 4 / 5;
+    grid-row: 2 / 5;
+    padding: 20px;
+}
+
+.odensetext {
+    grid-column: 3 / 4;
+    grid-row: 4 / 5;
+    padding: 20px;
+}
+
+.odenselogo {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+    text-align: center;
+    font-size: 0.75rem;
+    padding: 20px;
+}
+
+.odenselogo img {
+    width: 100px;
+    height: auto;
+    padding-bottom: 0;
+}
+.odensehead {
+    grid-column: 1/4;
+}
+
+.card.res {
+    grid-column: 4 / 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.card.res h2 {
+    margin-bottom: auto;
+}
+
+.links {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--background4);
+    padding: 20px;
 }
