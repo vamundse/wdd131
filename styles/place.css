@@ -136,4 +136,18 @@ table {
         margin: 0;
         border: 0;
     }
+
+    #weather-icon {
+        display: flex;
+    }
+
+    #weather-icon::before {
+        content: "Monday";
+        font-family: var(--heading-font);
+        font-size: 2rem;
+        color: white;
+        align-self: center;
+        padding-left: 10px;
+        font-weight: 600;
+    }
 }
