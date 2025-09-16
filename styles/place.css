@@ -141,7 +141,7 @@ table {
         display: flex;
     }
 
-    #weather-icon::before {
+    #weather-icon::after {
         content: "Monday";
         font-family: var(--heading-font);
         font-size: 2rem;
