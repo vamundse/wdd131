@@ -15,56 +15,69 @@
         <h1>Odense Denmark</h1>
     </header>
     <main>
-        <section>
-            <h2>Data</h2>
-            <table>
-                <tr>
-                    <th>Label:</th>
-                    <td>Value</td>
-                </tr>
-                <tr>
-                    <th>Label:</th>
-                    <td>Value</td>
-                </tr>
-                <tr>
-                    <th>Label:</th>
-                    <td>Value</td>
-                </tr>
-                <tr>
-                    <th>Label:</th>
-                    <td>Value</td>
-                </tr>
-                <tr>
-                    <th>Label:</th>
-                    <td>Value</td>
-                </tr>
-                <tr>
-                    <th>Label:</th>
-                    <td>Value</td>
-                </tr>
-            </table>
-        </section>
-        <section>
-            <h2>Weather</h2>
-            <p>Icon</p>
-            <table>
-                <tr>
-                    <th>Label:</th>
-                    <td>Value</td>
-                </tr>
-                <tr>
-                    <th>Label:</th>
-                    <td>Value</td>
-                </tr>
-                <tr>
-                    <th>Label:</th>
-                    <td>Value</td>
-                </tr>
-                <tr>
-                    <th>Label:</th>
-                    <td>Value</td>
-                </tr>
-            </table>
+        <section class="info">
+            <picture>
+                <source srcset="images/hc-andersen-large.webp" type="image/webp" media="(min-width: 1000px)">
+                <source srcset="images/hc-andersen-medium.webp" type="image/webp" media="(min-width: 500px)">
+                <img src="images/hc-andersen-small.webp" alt="A statue of H. C. Andersen in Odense" width="500" height="750">
+            </picture>
+            <div class="card data">
+                <h2 class="title left">Data</h2>
+                <table>
+                    <tr>
+                        <th>Area:</th>
+                        <td>79.30 sq km</td>
+                    </tr>
+                    <tr>
+                        <th>Population:</th>
+                        <td>185 480</td>
+                    </tr>
+                    <tr>
+                        <th>Languages:</th>
+                        <td>Danish</td>
+                    </tr>
+                    <tr>
+                        <th>Currency:</th>
+                        <td>Krone</td>
+                    </tr>
+                    <tr>
+                        <th>Time Zone:</th>
+                        <td>UTC+1</td>
+                    </tr>
+                    <tr>
+                        <th>Calling Code:</th>
+                        <td>+45</td>
+                    </tr>
+                    <tr>
+                        <th>Internet TLD:</th>
+                        <td>.dk</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="card weather">
+                <div class="title right">
+                    <h2>Weather</h2>
+                    <p><img src="images/weather-icon.svg" alt="Weather icon"></p>
+                </div>
+                <table>
+                    <tr>
+                        <th>Temperature:</th>
+                        <td>14 °C</td>
+                    </tr>
+                    <tr>
+                        <th>Conditions:</th>
+                        <td>Rain</td>
+                    </tr>
+                    <tr>
+                        <th>Wind:</th>
+                        <td>7.5 m/s</td>
+                    </tr>
+                    <tr>
+                        <th>Wind Chill:</th>
+                        <td><span id="windChill"></span> °C</td>
+                    </tr>
+                </table>
+            </div>
         </section>
     </main>
     <footer>

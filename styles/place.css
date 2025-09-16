@@ -1,0 +1,136 @@
+:root {
+    --primary-color: #b30000;
+    --secondary-color: #ffffff;
+    --text-color: #333;
+    --text-font: Arial, sans-serif;
+    --heading-font: 'Georgia', serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--text-font);
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+header, footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 1em 0;
+}
+    
+.info picture img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    border-bottom: 10px solid var(--primary-color);
+    margin-bottom: 20px;
+}
+
+table {
+    margin: 10px auto;
+}
+
+.card {
+    background-color: var(--secondary-color);
+    padding: 0px 20px 20px 20px;
+}
+
+.card th {
+    text-align: right;
+}
+
+.card h2 {
+    text-align: center;
+}
+
+.weather img {
+    display: block;
+    width: 80px;
+    height: auto;
+    margin: 10px auto;
+}
+
+@media screen and (min-width: 500px) {
+    body {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    .info {
+        position: relative;
+    }
+
+    .card {
+        position: relative;
+        min-height: 300px;
+    }
+
+    .card table {
+        padding-top: 90px;
+    }
+
+    .card.data {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        width: 300px;
+        opacity: 0.9;
+        padding-top: 20px;
+    }
+
+    .card.weather {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        width: 300px;
+        opacity: 0.9;
+        padding-top: 20px;
+    }
+
+    .title {
+        display: flex;
+        align-items: center;
+        background-color: #cf0000;
+        height: 80px;
+        width: 300px;
+        color: white;
+        padding: 20px;
+    }
+
+    .card .right {
+        position: absolute;
+        left: -20px;
+        top: 20px;
+    }
+
+    .card .left {
+        position: absolute;
+        left: 20px;
+        top: 20px;
+    }
+
+    .info picture img {
+        margin: 0;
+        border: 0;
+    }
+}
