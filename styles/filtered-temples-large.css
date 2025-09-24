@@ -1,0 +1,33 @@
+@media screen and (min-width: 52rem) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    white-space: nowrap;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        flex-direction: row;
+        justify-content: flex-end;
+        flex: 1;
+    }
+
+    .navigation a {
+        display: block;
+        background-color: rgb(0, 0, 0, 0);
+        width: 100%;
+        font-size: 1.25rem;
+    }
+
+    .album {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
