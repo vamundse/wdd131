@@ -1,0 +1,116 @@
+:root {
+    --color-text: #333333;
+    --color-headings: #264653;
+    --alternate-color-1: #2A9D8F;
+    --alternate-color-2: #E76F51;
+    --alternate-color-3: #E9C46A;
+    --alternate-color-4: #F4A261;
+    --alternate-color-1-grade:rgb(42, 157, 143, 0.1);
+    --alternate-color-2-grade: rgb(231, 111, 81, 0.1);
+    --alternate-color-3-grade: rgb(233, 196, 106, 0.1);
+    --alternate-color-4-grade: rgb(244, 162, 97, 0.1);
+    --alternate-color-5-grade: rgb(38, 70, 83, 0.1);
+    --font-text-family: "Noto Sans", sans-serif;
+    --font-header-family: "Kaushan Script", cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--color-text);
+    width: 100%;
+    font-family: var(--font-text-family);
+    margin: 0 20px 0 20px;
+}
+
+header, section {
+    padding: 20px;
+    max-width: 800px;
+}
+
+header {
+    margin: 0 auto;
+    text-align: center;
+}
+
+section {
+    margin: 20px auto;
+}
+
+h1, h2 {
+    color: var(--color-headings);
+    font-family: var(--font-header-family);
+}
+
+.green {
+    background-color: var(--alternate-color-1-grade);
+}
+
+.orange {
+    background-color: var(--alternate-color-4-grade);
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+a {
+    color: var(--color-headings);
+}
+
+li {
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    padding: 15px;
+    max-width: 120px;
+}
+
+#blue {
+    background-color: var(--color-headings);
+    height: 20px;
+    min-width: 150px;
+}
+
+#black {
+    background-color: var(--color-text);
+    height: 20px;
+    min-width: 150px;
+}
+
+#pink {
+    background-color: var(--alternate-color-1);
+    height: 20px;
+    min-width: 150px;
+}
+
+#brown {
+    background-color: var(--alternate-color-4);
+    height: 20px;
+    min-width: 150px;
+}
+
+.bold {
+    font-weight: 800;
+}
+
+#kaushan {
+    font-family: var(--font-header-family);
+    font-size: 1.25rem;
+}
+
