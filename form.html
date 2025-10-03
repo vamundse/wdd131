@@ -19,10 +19,10 @@
     </header>
     <section>
         <form method="get" action="review.html">
-            <label><div class="heading">Product Name*</div>
+            <div class="heading"><label for="prodname">Product Name*</label></div>
             <select id="prodname" name="prodname" required>
                 <option selected disabled value="">Select a product &#9662;</option>
-            </select></label>
+            </select>
             <div class="heading">Overall Rating*</div>
             <div class="buttons">
             <label><input type="radio" name="rating" id="5star" required>⭐⭐⭐⭐⭐</label>
@@ -31,8 +31,8 @@
             <label><input type="radio" name="rating" id="2star">⭐⭐</label>
             <label><input type="radio" name="rating" id="1star">⭐</label>
             </div>
-            <div class="heading">Date of Installation*</div>
-            <label><input type="date" name="instdate" id="instdate" required></label>
+            <div class="heading"><label for="instdate">Date of Installation*</label></div>
+            <input type="date" name="instdate" id="instdate" required>
             <div class="heading">Which feature did you find useful in the product?<br><span>(Check all that apply)</span></div>
             <div class="buttons">
             <label><input type="checkbox" name="durability" id="durability" value="yes">Durability</label>
@@ -40,8 +40,8 @@
             <label><input type="checkbox" name="performance" id="performance" value="yes">Performance</label>
             <label><input type="checkbox" name="design" id="design" value="yes">Design</label>
             </div>
-            <label for="textreview"><div class="heading">Written Review <span>(Optional)</span></div>
-            <textarea name="textreview" id="textreview"></textarea></label>
+            <div class="heading"><label for="textreview">Written Review <span>(Optional)</span></label></div>
+            <textarea name="textreview" id="textreview"></textarea>
             <div class="heading">Your Name <span>(Optional)</span></div>
             <label><input type="text" name="name" id="name" placeholder="Your Name"></label>
             <input type="submit" value="Post Review">
