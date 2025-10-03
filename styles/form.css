@@ -31,7 +31,6 @@ section {
 form label {
     display: block;
     color: #333;
-    font-size: 1rem;
 }
 
 form select,
@@ -53,7 +52,7 @@ form input[type="checkbox"] {
     width: 20px;
     height: 20px;
     border: 1px solid var(--border-color);
-    background: #fff;
+    background: white;
     margin-right: 6px;
     vertical-align: middle;
     appearance: none;
@@ -68,12 +67,12 @@ form input[type="checkbox"] {
 
 form input[type="radio"]:checked,
 form input[type="checkbox"]:checked {
-    background: var(--primary-color);
+    background: green;
     border: #fff;
 }
 
 form select {
-    height: 44px;
+    height: 54px;
     color: #333;
 }
 
@@ -126,4 +125,19 @@ footer {
 .thanks {
     padding: 50px;
     text-align: center;
+}
+
+p {
+    font-size: .8rem;
+    padding-top: 20px;
+}
+
+form input[type="date"],
+form select {
+    border-bottom: 10px red solid;
+}
+
+form input[type="date"]:valid,
+form select:valid {
+    border-bottom: 10px green solid;
 }
