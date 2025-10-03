@@ -1,0 +1,129 @@
+:root {
+    --primary-color: #00379d;
+    --border-color: #999;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Noto Sans", sans-serif;
+}
+
+header {
+    background-color: var(--primary-color);
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+}
+
+section {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    color: #333;
+    font-size: 1rem;
+}
+
+form select,
+form textarea,
+form input[type="date"],
+form input[type="text"] {
+    background-color: #eee;
+    border: 1px var(--border-color) solid;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #333;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}
+
+form input[type="radio"],
+form input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--border-color);
+    background: #fff;
+    margin-right: 6px;
+    vertical-align: middle;
+    appearance: none;
+}
+
+form input[type="radio"] {
+    border-radius: 50%;
+}
+form input[type="checkbox"] {
+    border-radius: 6px;
+}
+
+form input[type="radio"]:checked,
+form input[type="checkbox"]:checked {
+    background: var(--primary-color);
+    border: #fff;
+}
+
+form select {
+    height: 44px;
+    color: #333;
+}
+
+form textarea {
+    height: 120px;
+}
+
+form .heading {
+    padding-top: 1.5rem;
+    color: #333;
+    font-weight: 600;
+    font-size: 1.2em;
+    font-family: "Kaushan Script", cursive;
+}
+
+form .buttons {
+    margin-top: 0.5rem;
+}
+
+form .buttons label {
+    margin-top: 0.5rem;
+}
+
+form span {
+    color: var(--primary-color);
+    font-size: 1rem;
+}
+
+input[type="submit"] {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 1rem;
+    padding: 0.75rem;
+    border: 0px;
+    border-radius: 6px;
+    background: var(--primary-color);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+footer {
+    margin-top: 2rem;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+.thanks {
+    padding: 50px;
+    text-align: center;
+}
