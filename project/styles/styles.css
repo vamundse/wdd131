@@ -241,10 +241,6 @@ section {
     border-radius: 6px;
 }
 
-.be-card h3 {
-    text-decoration: underline 3px var(--alternate-color-2);
-}
-
 .be-card img {
     width: 100%;
     height: auto;
