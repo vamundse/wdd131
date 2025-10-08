@@ -126,7 +126,7 @@ main {
 }
 
 section {
-    padding: 2rem;
+    padding: 2rem 1rem;
 }
 
 .action {
@@ -316,10 +316,10 @@ form .button:hover {
 
 footer {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     background-color: var(--primary-color);
     color: white;
-    padding: 20px;
+    padding-bottom: 2rem;
     text-align: center;
 }
 
@@ -334,7 +334,7 @@ footer .linker {
 }
 
 footer h3 {
-    margin: 0 0 1rem 0;
+    margin: 2rem 0 0.5rem 0;
 }
 
 @media screen and (min-width: 66rem) {
