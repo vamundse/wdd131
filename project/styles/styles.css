@@ -1,5 +1,6 @@
 :root {
     --primary-color: #264653;
+    --primary-color-rgb: rgb(38, 70, 83, 0.2);
     --text-color: #333;
     --alternate-color-1: #2A9D8F;
     --alternate-color-2: #F4A261;
@@ -48,6 +49,11 @@ h2 {
 
 h3 {
     font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+h4 {
     text-align: center;
     margin-bottom: 2rem;
 }
@@ -131,7 +137,6 @@ section {
 
 .action {
     width: 100%;
-    background-color: #f7f7f7;
 }
 
 .action h1 {
@@ -169,7 +174,6 @@ section {
 }
 
 .biglink {
-    margin: 2rem 0 1rem 0;
     font-size: 1.2rem;
     text-align: center;
     display: block;
@@ -211,6 +215,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 .behandlingskort {
@@ -222,7 +227,7 @@ section {
     flex-direction: column;
     align-items: center;
     background-color: #f9f9f9;
-    padding: 1rem;
+    padding: 2rem 0 1rem 0;
     margin-bottom: 1rem;
     border-radius: 6px;
 }
@@ -231,13 +236,10 @@ section {
     text-decoration: underline 3px var(--alternate-color-2);
 }
 
-.be-card h4 {
-    padding-bottom: 2rem;
-}
-
 .be-card img {
     width: 100%;
     height: auto;
+    border-radius: 0;
 }
 
 .be-card .text {
@@ -250,13 +252,6 @@ section {
 
 .be-card .biglink {
     margin: 0;
-}
-
-.underline {
-    background-color: var(--alternate-color-2);
-    height: 7px;
-    width: 100%;
-    margin-bottom: 2rem;
 }
 
 .kontaktskjema {
