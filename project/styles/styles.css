@@ -184,6 +184,14 @@ section {
     color: var(--alternate-color-2);
 }
 
+.text {
+    padding: 2rem 1rem 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
 .info {
     width: 100%;
 }
@@ -210,16 +218,17 @@ section {
     border-bottom-right-radius: 0px;
 }
 
-.text {
-    padding: 2rem 1rem 2rem 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+.christina .biglink {
+    margin-top: 2rem;
 }
 
 .behandlingskort {
     width: 100%;
+    background-color: var(--primary-color);
+}
+
+.behandlingskort h2 {
+    color: white;
 }
 
 .be-card {
@@ -228,7 +237,7 @@ section {
     align-items: center;
     background-color: #f9f9f9;
     padding: 2rem 0 1rem 0;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     border-radius: 6px;
 }
 
