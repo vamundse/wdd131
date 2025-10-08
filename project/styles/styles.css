@@ -215,13 +215,20 @@ section {
 
 .behandlingskort {
     width: 100%;
-    background-color: #f9f9f9;
 }
 
 .be-card {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #f9f9f9;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+}
+
+.be-card h3 {
+    text-decoration: underline 3px var(--alternate-color-2);
 }
 
 .be-card h4 {
