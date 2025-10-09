@@ -285,7 +285,7 @@ form .button {
 footer {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
     background-color: var(--primary-color);
     color: white;
     padding-bottom: 2rem;
