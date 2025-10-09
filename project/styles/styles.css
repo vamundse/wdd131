@@ -17,10 +17,6 @@ body {
     font-family: var(--primary-font);
 }
 
-.wide {
-    display: none;
-}
-
 a {
     color: var(--primary-color);
     font-weight: 600;
@@ -107,8 +103,8 @@ header .navigation {
     padding: 0.5rem;
 }
 
-.navigation a:last-child {
-    padding-bottom: 2rem;
+.navigation a:hover {
+    color: var(--alternate-color-2);
 }
 
 .navigation a:active {
@@ -149,10 +145,17 @@ section {
     font-size: 1.2rem;
     margin: 0 0 1rem 0;
     border-radius: 6px;
+    cursor: pointer;
+}
+
+.button:hover {
+    box-shadow: 5px 5px 1px var(--alternate-color-2);
+    text-decoration: none;
 }
 
 .button:active {
     color:var(--alternate-color-2);
+    transform: translateY(3px);
 }
 
 .biglink {
@@ -284,10 +287,6 @@ form .button {
     font-weight: 700;
 }
 
-form .button:hover {
-    text-decoration: underline 3px var(--alternate-color-2);
-}
-
 footer {
     display: flex;
     flex-direction: column;
@@ -363,20 +362,21 @@ footer h3 {
         color: white;
         text-decoration: none;
         display: block;
+        font-size: 1rem;
     }
 
     header .navigation a:hover {
         color:var(--alternate-color-2);
-        font-size: 18px;
+        font-size: 1.2rem;
         font-weight: 800;
     }
 
     .navigation a:last-child {
-        padding-bottom: 0;
+
     }
 
     section {
-        margin: 5rem auto;
+        margin: 2rem auto;
     }
 
     .action {
