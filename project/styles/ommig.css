@@ -1,0 +1,53 @@
+.card .text {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.card img {
+    height: auto;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.card h2, p {
+    padding: 0 1rem;
+}
+
+ul {
+    padding: 0 1rem;
+}
+
+li {
+    margin-left: 2rem;
+}
+
+@media screen and (min-width: 48rem) {
+    
+    .card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-bottom: 0;
+        background-color: #fff;
+    }
+
+    .card .text {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem 1rem;
+        background-color: #f9f9f9;
+        border-radius: 6px;
+        align-self: flex-start;
+    }
+
+    .card img {
+        align-self: flex-start;
+        border-radius: 6px;
+    }
+
+    section {
+        padding: 0;
+        margin: 4rem auto;
+    }
+}

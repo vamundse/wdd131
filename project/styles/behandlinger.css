@@ -1,0 +1,90 @@
+:root {
+    --primary-color: #264653;
+    --primary-color-rgb: rgb(38, 70, 83, 0.2);
+    --text-color: #333;
+    --alternate-color-1: #2A9D8F;
+    --alternate-color-2: #F4A261;
+    --primary-font: "Noto Sans", sans-serif;
+}
+
+.salg h3 {
+    background-color: var(--primary-color);
+    color: white;
+    height: 100%;
+    border-radius: 6px;
+    padding: 2rem;
+    margin: 0;
+}
+
+h2 {
+    margin-bottom: 2rem;
+}
+
+h3 {
+    margin-bottom: 1rem;
+}
+
+.beskrivelse {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.card img {
+    border-radius: 0;
+}
+
+.button {
+margin: 2rem 0;
+text-align: center;
+}
+
+
+@media screen and (min-width: 48rem) {
+    
+    .salg {
+        border-radius: 6px;
+        width: 100%;
+    }
+
+    .ansigtszone, .facelift {
+        background-color: #f9f9f9;
+    }
+
+    .card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0 2rem;
+        padding-bottom: 0;
+    }
+
+    .card .text {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem 0;
+        border-radius: 6px;
+        background-color: var(--alternate-color-2);
+        align-self: flex-start;
+    }
+
+    .card img {
+        align-self: flex-start;
+        border-radius: 6px;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    .beskrivelse {
+        margin-bottom: 2rem;
+    }
+
+    section {
+        padding: 0 0 1rem 0;
+        border-radius: 6px;
+        margin: 4rem auto;
+    }
+}

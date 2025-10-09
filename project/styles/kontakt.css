@@ -1,0 +1,53 @@
+.card {
+    flex-direction: column-reverse;
+    padding: 0 0 1rem 0rem;
+    margin: 0 1rem;
+}
+
+.card img {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 48rem) {
+    
+    .card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-bottom: 2rem;
+        background-color: #fff;
+        margin: 0 auto;
+    }
+
+    .card .text {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem 0;
+        background-color: #f9f9f9;
+        border-radius: 6px;
+        align-self: flex-start;
+    }
+
+    .card img {
+        align-self: flex-start;
+        border-radius: 6px;
+    }
+
+    .card p, h2 {
+        text-align: left;
+    }
+
+    .card h2 {
+        padding-left: 2rem;
+    }
+
+    section {
+        padding: 0;
+        margin: 4rem auto;
+    }
+}
