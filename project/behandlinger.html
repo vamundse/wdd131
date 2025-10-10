@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +17,8 @@
 </head>
 <body>
     <header>
-        <div class="logo"><a href="index.html"><img src="images/logo.webp" alt="logo"></a></div>
+        <div class="logo"><a href="index.html"><img src="images/logo.webp" alt="logo">
+        </a></div>
         <nav class="navigation">
             <a href="index.html">Hjem</a>
             <a href="ommig.html">Om mig</a>
@@ -31,9 +32,9 @@
             <h1>Behandlinger</h1>
         </section>
         <section class="salg">
-            <h3>"Er du klar til at tage det næste skridt mod bedre sundhed? Book en prøvebehandling i dag og oplev
+            <p>"Er du klar til at tage det næste skridt mod bedre sundhed? Book en prøvebehandling i dag og oplev
                 selv forskellen! Din trivsel er vigtig, og jeg er her for at støtte dig på din vej l et sundere og
-                gladere liv."</h3>
+                gladere liv."</p>
         </section>
         <section class="ansigtszone" id="ansigtszone">
             <div class="beskrivelse">
@@ -44,7 +45,10 @@
                 <b>behandle årsagen</b> til at symptomer og/eller sygdomme er opstået.</p>
             </div>
             <div class="card">
-                <img src="images/ansigtszone.webp" loading="lazy" alt="Ansigtszone- og refleksterapi">
+                <picture>
+                    <source srcset="images/ansigtszone-large.webp" width="768" height="576" media="(min-width: 500px) and (max-width: 768px)">
+                    <img src="images/ansigtszone.webp" alt="Ansigtszone- og refleksterapi" width="500" height="375">
+                </picture>
                 <div class="text">
                     <h3>Kan bruges ved:</h3>
                     <p><span id="ansigtbrug"></span></p>
@@ -61,7 +65,10 @@
                     et forløb med dig for at opnå og vedligeholde dit ønskede resultat.</p>
             </div>
             <div class="card">
-                <img src="images/facelift.webp" laoding="lazy" alt="Japansk Faceliting">
+                <picture>
+                    <source srcset="images/facelift-large.webp" width="768" height="576" media="(min-width: 500px) and (max-width: 768px)">
+                    <img src="images/facelift.webp" loading="lazy" alt="Japansk Faceliting" width="500" height="375">
+                </picture>
                 <div class="text">
                     <h3>Hjælper til med at:</h3>
                     <p><span id="faceliftbrug"></span></p>

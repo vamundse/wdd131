@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,19 +22,26 @@
             <a href="behandlinger.html">Behandlinger</a>
             <a href="kontakt.html">Kontakt mig</a>
         </nav>
-        <button id="burgermenu"></button>
+        <button id="burgermenu" aria-label="mobile menu button"></button>
     </header>
     <main>
         <section class="action">
-            <h1 class="mobile">Vil du have en behandling?</h1>
-            <img class="img" src="images/actionbg.webp" alt="Background image of treatment">
+            <h1>Vil du have en behandling?</h1>
+            <picture>
+                <source srcset="images/actionbg-large.webp" width="1920" height="1347" media="(min-width: 1200px)">
+                <source srcset="images/actionbg-medium.webp" width="1200" height="842" media="(min-width: 768px)">
+                <img class="img" src="images/actionbg-small.webp" alt="Background image of treatment" width="768" height="539">
+            </picture>
             <p><a href="behandlinger.html#ansigtszone">Anisktszone- og relfeksterapi</a> gør det muligt at behandle og forebygge en lang række fysiske, psykiske, hormonelle og funktionelle ubalancer og symptomer, mens <a href="behandlinger.html#facelift">Japans facelifting</a> strammer op ansiktet og halsen. </p>
             <div class="btn-container"><a href="behandlinger.html" class="button">Lær mer om mine behandlinger</a></div>
         </section>
         <section class="christina">
             <h2>Hvem er jeg?</h2>
             <div class="card">
-                <img src="images/christina.webp" alt="Christina Gade portrait" loading="lazy">
+                <picture>
+                    <source srcset="images/christina-large.webp" width="768" height="768" media="(min-width: 500px) and (max-width: 768px)">
+                    <img src="images/christina.webp" alt="Christina Gade portrait" loading="lazy">
+                </picture>
                 <h3>Christina Gade (55)</h3>
                 <p>Jeg uddannet i <a href="behandlinger.html#facelift">Japansk Cosmo Lifting</a> fra 2022 og i
                 <a href="behandlinger.html#ansigtszone">Ansigtszone- og Refleksterapeut</a> i 2023.
@@ -46,7 +53,10 @@
         <section class="behandlinger">
             <h2>Mine behandlinger</h2>
             <div class="card">
-                <img src="images/facelift.webp" alt="Japan Cosmo Lifting treatment" loading="lazy">
+                <picture>
+                    <source srcset="images/facelift-large.webp" width="768" height="576" media="(min-width: 500px) and (max-width: 768px)">
+                    <img src="images/facelift.webp" loading="lazy" alt="Japansk Faceliting" width="500" height="375">
+                </picture>
                 <div class="headings">  
                     <h3>Japansk Cosmo Lifting</h3>
                     <h4>Naturlig Ansigtsløftning</h4>
@@ -55,7 +65,10 @@
                 <a href="behandlinger.html#facelift" class="biglink">Lær mer om Japansk Cosmo Lifting</a>
             </div>
             <div class="card">
-                <img src="images/ansigtszone.webp" alt="Facezone and reflex therapy treatment" loading="lazy">
+                <picture>
+                    <source srcset="images/ansigtszone-large.webp" width="768" height="576" media="(min-width: 500px) and (max-width: 768px)">
+                    <img src="images/ansigtszone.webp" alt="Ansigtszone- og refleksterapi" width="500" height="375" loading="lazy">
+                </picture>
                     <div class="headings"><h3>Ansigtszone- og Refleksterapi</h3>
                     <h4>Behandler og forebygger</h4>
                 </div>
@@ -65,7 +78,7 @@
         </section>
         <section class="kontaktskjema">
             <h2>Kontakt mig</h2>
-            <form>
+            <form method="get" action="kontakt-tak.html">
                 <label>Navn <span class="star">*</span><input type="text" name="navn" pattern="[A-Åa-å ]{4,100}" title="5 to 100 letters" required></label>
                 <label>E-post <span class="star">*</span><input type="email" name="epost" pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$" title="Please enter a valid email adress (example@example.com)" required></label>
                 <label>Mobilnummer (valgfrit)<input type="tel" name="mobil"></label>

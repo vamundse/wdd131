@@ -295,6 +295,7 @@ footer {
 footer a {
     color: white;
     font-weight: 400;
+    padding: 0.5rem;
 }
 
 footer .linker {
@@ -374,7 +375,7 @@ footer h3 {
         display: grid;
         grid-template-columns: 3fr minmax(500px, 988px) 3fr;
         grid-template-rows: 1fr 0.5fr 0.7fr 0.8fr 1fr;
-        background: url("../images/actionbg.webp") center/cover no-repeat;
+        background: url("../images/actionbg-large.webp") center/cover no-repeat;
         max-width: 100%;
         padding: 1rem 0;
         height: 700px;
@@ -424,9 +425,12 @@ footer h3 {
         padding-bottom: 0;
     }
 
-    .christina .card img {
+    .christina .card picture {
         grid-column: 1/2;
         grid-row: 1/6;
+    }
+
+    .christina .card img {
         border-top-right-radius: 0;
         border-bottom-left-radius: 6px;
     }

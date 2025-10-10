@@ -13,6 +13,23 @@ h2 {
     margin-bottom: 1rem;
 }
 
+.map {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    
+}
+
+.map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+}
+
 @media screen and (min-width: 48rem) {
     
     .card {
@@ -33,8 +50,11 @@ h2 {
         align-self: flex-start;
     }
 
-    .card img {
+    .card picture {
         align-self: flex-start;
+    }
+
+    .card img {
         border-radius: 6px;
     }
 
@@ -50,6 +70,4 @@ h2 {
         padding: 0;
         margin: 4rem auto;
     }
-
-    
 }

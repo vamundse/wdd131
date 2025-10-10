@@ -41,8 +41,11 @@ li {
         align-self: flex-start;
     }
 
-    .card img {
+    .card picture {
         align-self: flex-start;
+    }
+
+    .card img {
         border-radius: 6px;
     }
 

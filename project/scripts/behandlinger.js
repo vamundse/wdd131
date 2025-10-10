@@ -34,6 +34,3 @@ ansigtzone.forEach(perk => {
 facelifting.forEach(perk => {
     facelift.innerHTML += `<p>${perk}</p>`;
 });
-
-
-

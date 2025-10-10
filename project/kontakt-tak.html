@@ -8,6 +8,7 @@
     <title>Christina Gade - Ansigtszone & Refleksterapeut</title>
     <script src="scripts/burgermenu.js" defer></script>
     <script src="scripts/timedate.js" defer></script>
+    <script src="scripts/localstorage.js" defer></script>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/kontakt.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,33 +28,19 @@
     </header>
     <main>
         <section>
-            <h1>Kontakt mig</h1>
+            <h1>Tak for din besked</h1>
         </section>
         <section class="card">
             <div class="text">
-                <h2>Kontaktinformation</h2>
-                <p><b>Telefon:</b> 28 25 41 18</p> 
-                <p><b>E-post:</b> cmgalm@gmail.com</p>
-                <p><b>Adresse:</b> Galgehøj 104, 8700 Horsens</p>
-                <p><b>Åbningstider:</b> Mandag til fredag etter aftale.</p>
+                <p>Jeg glæder mig til at lese din besked og vil kontakte dig så snart som muligt.</p>
             </div>
             <picture>
             <source srcset="images/christina2-large.webp" width="768" height="576" media="(min-width: 500px) and (max-width: 768px)">
             <img src="images/christina2.webp" alt="Christina Gade">
             </picture>
         </section>
-        <section class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4564.075548510434!2d9.92168792787861!3d55.87905915412993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464c63e2f1abeee7%3A0xdae9b185039b4532!2sGalgeh%C3%B8j%20104%2C%208700%20Horsens!5e1!3m2!1sno!2sdk!4v1760012202667!5m2!1sno!2sdk" width="400" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Kort som viser terapilokation"></iframe>
-        </section>
-        <section class="kontaktskjema">
-            <h2>Send mig en besked</h2>
-            <form method="get" action="kontakt-tak.html">
-                <label>Navn <span class="star">*</span><input type="text" name="navn" pattern="[A-Åa-å ]{4,100}" title="5 to 100 letters" required></label>
-                <label>E-post <span class="star">*</span><input type="email" name="epost" pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$" title="Please enter a valid email adress (example@example.com)" required></label>
-                <label>Mobilnummer (valgfrit)<input type="tel" name="mobil"></label>
-                <label>Besked <span class="star">*</span><textarea name="besked" title="20 to 500 letters" required></textarea></label>
-                <input class="button" type="submit" value="Send mig din besked">
-            </form>
+        <section>
+            
         </section>
     </main>
     <footer>
